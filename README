@@ -1,0 +1,23 @@
+# É necessário possuir o Docker e Docker Compose instalados.
+
+# Rodando a API (a partir da raiz)
+
+cd api
+
+# Rodar o laravel sail
+
+    ./vendor/bin/sail up -d
+
+# Rodar as migrations
+
+    ./vendor/bin/sail artisan migrate
+
+# Rodando o APP (a partir da raiz)
+
+cd app
+
+# Rodar o Vue
+
+    docker-compose up --build
+
+A partir daí é só criar os produtos com importação de arquivos JSON e testar as funcionalidades.
